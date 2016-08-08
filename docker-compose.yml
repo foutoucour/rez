@@ -1,0 +1,7 @@
+version: "2"
+services:
+  rez:
+    container_name: rez
+    build: .
+    volumes:
+      - /home/ftc/workspace/rez_packages:/root/workspace/rez_packages
