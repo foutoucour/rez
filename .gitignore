@@ -9,3 +9,6 @@ dist/
 *~
 docs/_build
 .DS_Store
+
+# pycharm files
+.idea
