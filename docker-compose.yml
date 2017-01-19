@@ -4,4 +4,12 @@ services:
     container_name: rez
     build: .
     volumes:
-      - /home/ftc/workspace/rez_packages:/root/workspace/rez_packages
+      - /rdo/rodeo:/rdo/rodeo  # for logs
+      - /rdo/rodeo/setup/temp/rez/workspace/rez_packages:/root/workspace/rez_packages
+      # users need to save in /shows usually
+      # See https://rodeofx.atlassian.net/browse/RDEV-6678
+      - /shows:/shows
+      # add alternative paths to /rdo/shows
+      - /rdo/shows:/rdo/shows
+      - /mnt/shows:/mnt/shows
+      - /software:/software
